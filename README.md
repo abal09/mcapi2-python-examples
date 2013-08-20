@@ -15,13 +15,16 @@ Just please remember this is intended as a beginner's demo, so please try to kee
 Installation
 ------------
 ### The Django one
-These commands will get you setup in a virtualenv
+
+* Clone the repo or download the example code and put it ... somewhere.
+* then these commands will get you setup in a virtualenv
+
 ```
 $ pip install virtualenv
 $ virtualenv mcapi_example_env
 $ source mcapi_example_env/bin/activate
 $ pip install Django==1.4.5
-$ django-admin.py startproject --extension=py,json --template=https://github.com/mailchimp/mcapi2-python-examples/blob/master/django mcapi_example
+$ django-admin.py startproject --extension=py,json --template=/path/to/django_in_the_repo mcapi_example
 $ cd mcapi_example
 $ pip install -r requirements.txt
 ```
