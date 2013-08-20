@@ -1,0 +1,25 @@
+{% extends "_base.html" %}
+
+{% block title %}Reports{% endblock %}
+
+{% block content %}
+<h2>Select a Campaign to View Reports</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Title</th>
+        <th>Type</th>
+        <th>Sent at</th>
+    </tr>
+
+    {% for campaign in campaigns %}
+    <tr>
+        <td><a href="/reports/{{ campaign.id }}">{{ campaign.title }}</a></td>
+        <td>{{ campaign.type }}</td>
+        <td>{{ campaign.send_time }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+{% endblock %}
