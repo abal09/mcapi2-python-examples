@@ -21,7 +21,7 @@ $ pip install virtualenv
 $ virtualenv mcapi_example_env
 $ source mcapi_example_env/bin/activate
 $ pip install Django==1.4.5
-$ django-admin.py startproject --extension=py,json --template=https://github.com/mailchimp/mcapi2-python-examples/blob/master/django
+$ django-admin.py startproject --extension=py,json --template=https://github.com/mailchimp/mcapi2-python-examples/blob/master/django mcapi_example
 $ cd mcapi_example
 $ pip install -r requirements.txt
 ```
